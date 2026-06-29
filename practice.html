@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>KPC 천안 교육 안내</title>
+    <style>
+        body { margin: 0; padding: 0; text-align: center; background-color: #f5f5f5; font-family: 'Malgun Gothic', sans-serif; }
+        
+        /* [가로폭 동기화] 위에 들어가는 이미지와 하단 표의 가로 길이를 800px로 완벽히 일치시킵니다 */
+        .wrapper { width: 100%; max-width: 800px; margin: 0 auto; box-sizing: border-box; }
+        
+        .image-container img { display: block; width: 100%; height: auto; }
+
+        /* 표 영역 구조 디자인 */
+        .course-section { background: #fff; padding: 25px 20px; border: 1px solid #ddd; border-top: none; text-align: left; box-sizing: border-box; }
+        .section-title { font-size: 18px; font-weight: bold; color: #1e3a8a; border-bottom: 2px solid #1e3a8a; padding-bottom: 12px; margin-bottom: 20px; }
+        
+        /* [요청사항] 실제 사이트 규격의 정밀한 HTML 표(Table) 스타일 구조 정의 */
+        .edu-table { width: 100%; border-collapse: collapse; font-size: 14px; table-layout: fixed; }
+        
+        /* 표 헤더 (보내주신 스크린샷의 짙은 네이비 감성 컬러 매칭) */
+        .edu-table th { background-color: #1a365d; color: #ffffff; padding: 14px 10px; font-weight: bold; text-align: center; border: 1px solid #1a365d; }
+        
+        /* 표 내부 각 셀의 너비 비율 고정 설정 (분야, 교육명, 교육시간, 교육일정) */
+        .edu-table th:nth-child(1) { width: 15%; }
+        .edu-table th:nth-child(2) { width: 45%; }
+        .edu-table th:nth-child(3) { width: 13%; }
+        .edu-table th:nth-child(4) { width: 27%; }
+
+        /* 기본 표 내부 줄 스타일 */
+        .course-row { border-bottom: 1px solid #cbd5e0; cursor: pointer; transition: background 0.15s; }
+        .course-row td { padding: 14px 10px; text-align: center; color: #2d3748; line-height: 1.4; }
+        
+        /* 교육명은 왼쪽으로 정렬되도록 별도 세팅 */
+        .course-row td.title-cell { text-align: left; font-weight: 500; }
+        
+        /* 마우스 올렸을 때 하이라이트 효과 */
+        .course-row:hover { background-color: #edf2f7 !important; color: #1e3a8a; }
+
+        /* 🔥 [요청사항] 인재키움 교육 행에만 적용되는 부드럽고 화사한 연하늘색 배경색 */
+        .course-row.injae { background-color: #e6fffa; }
+        
+        /* 인재키움 전용 오렌지색 미니 배지 디자인 */
+        .injae-badge { display: inline-block; background-color: #feebc8; color: #c05621; font-size: 11px; font-weight: bold; padding: 3px 6px; border-radius: 4px; margin-left: 8px; vertical-align: middle; }
+    </style>
+</head>
+<body>
+
+    <div class="wrapper">
+        <!-- [상단] 홍보용 이미지 구역 -->
+        <div class="image-container">
+            <img src="https://raymicro.kr/kpc/cha/2026/202605_cha_junaug/img/dmhead1.jpg" alt="헤더">
+            <img src="https://raymicro.kr/kpc/cha/2026/202605_cha_junaug/img/dmlisthead.jpg" alt="리스트헤더">
+        </div>
+
+        <!-- [하단] 스크린샷 스펙 완벽 구현 정밀 표 구역 -->
+        <div class="course-section">
+            <div class="section-title">■ 과정별 보기 (신청할 과정을 선택하세요)</div>
+            
+            <table class="edu-table">
+                <thead>
+                    <tr>
+                        <th>분야</th>
+                        <th>교육과정</th>
+                        <th>총 교육시간</th>
+                        <th>교육일정</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr class="course-row injae" onclick="window.open('http://www.kpc.or.kr/PTWED003_dtil_view.do?ecno=47856&cclno=49050052&cono=154577', '_blank')"><td>구매계약과 공정거래하도급법의 이해</td><td class="title-cell">구매·자재<span class="injae-badge">인재키움</span></td><td>14시간</td><td>2026-06-01(월) ~ 2026-06-02(화)</td></tr>
+<tr class="course-row" onclick="window.open('http://www.kpc.or.kr/PTWED003_dtil_view.do?ecno=47604&cclno=49050125&cono=156846', '_blank')"><td>AI 기반 보고서 작성 마스터</td><td class="title-cell">엑셀·PPT·문서</td><td>7시간</td><td>2026-06-02(화) ~ 2026-06-02(화)</td></tr>
+<tr class="course-row injae" onclick="window.open('http://www.kpc.or.kr/PTWED003_dtil_view.do?ecno=47523&cclno=49050123&cono=155702', '_blank')"><td>업무 효율을 높이는 노션 실무, 기초부터 심화까지</td><td class="title-cell">비즈니스스킬<span class="injae-badge">인재키움</span></td><td>14시간</td><td>2026-06-08(월) ~ 2026-06-09(화)</td></tr>
+<tr class="course-row injae" onclick="window.open('http://www.kpc.or.kr/PTWED003_dtil_view.do?ecno=47601&cclno=49050125&cono=152163', '_blank')"><td>비즈니스 파워포인트 활용 실무 (ChatGPT AI 자동화 기법)[지역]</td><td class="title-cell">엑셀·PPT·문서<span class="injae-badge">인재키움</span></td><td>14시간</td><td>2026-06-08(월) ~ 2026-06-09(화)</td></tr>
+<tr class="course-row" onclick="window.open('http://www.kpc.or.kr/PTWED003_dtil_view.do?ecno=47647&cclno=49050253&cono=153323', '_blank')"><td>AI 활용 실무 회계 기초 (영업 및 영업지원부서)(지역)</td><td class="title-cell">마케팅·영업</td><td>20시간</td><td>2026-06-08(월) ~ 2026-06-10(수)</td></tr>
+<tr class="course-row injae" onclick="window.open('http://www.kpc.or.kr/PTWED003_dtil_view.do?ecno=47596&cclno=49050066&cono=152097', '_blank')"><td>ChatGPT를 이용한 엑셀 실무</td><td class="title-cell">엑셀·PPT·문서<span class="injae-badge">인재키움</span></td><td>7시간</td><td>2026-06-10(수) ~ 2026-06-10(수)</td></tr>
+<tr class="course-row injae" onclick="window.open('http://www.kpc.or.kr/PTWED003_dtil_view.do?ecno=47602&cclno=49050125&cono=156119', '_blank')"><td>한번에 끝내는 엑셀,PPT,워드 활용 기초 (ChatGPT 자동화 실전)</td><td class="title-cell">엑셀·PPT·문서<span class="injae-badge">인재키움</span></td><td>21시간</td><td>2026-06-10(수) ~ 2026-06-12(금)</td></tr>
+<tr class="course-row injae" onclick="window.open('http://www.kpc.or.kr/PTWED003_dtil_view.do?ecno=47541&cclno=49050226&cono=156103', '_blank')"><td>일잘러의 ChatGPT와 생성형 AI 업무 활용</td><td class="title-cell">생성형AI·디지털전환(DX)<span class="injae-badge">인재키움</span></td><td>6시간</td><td>2026-06-11(목) ~ 2026-06-11(목)</td></tr>
+<tr class="course-row injae" onclick="window.open('http://www.kpc.or.kr/PTWED003_dtil_view.do?ecno=47411&cclno=49050001&cono=153983', '_blank')"><td>생산관리담당자 문제해결능력향상 (생성형 AI 활용)</td><td class="title-cell">생산<span class="injae-badge">인재키움</span></td><td>14시간</td><td>2026-06-11(목) ~ 2026-06-12(금)</td></tr>
+<tr class="course-row injae" onclick="window.open('http://www.kpc.or.kr/PTWED003_dtil_view.do?ecno=47355&cclno=49050046&cono=151902', '_blank')"><td>특허정보조사 및 분석</td><td class="title-cell">R＆D<span class="injae-badge">인재키움</span></td><td>14시간</td><td>2026-06-11(목) ~ 2026-06-12(금)</td></tr>
+<tr class="course-row injae" onclick="window.open('http://www.kpc.or.kr/PTWED003_dtil_view.do?ecno=47535&cclno=49050042&cono=154062', '_blank')"><td>생산현장 재해제로 안전활동 실무</td><td class="title-cell">생산<span class="injae-badge">인재키움</span></td><td>14시간</td><td>2026-06-15(월) ~ 2026-06-16(화)</td></tr>
+<tr class="course-row injae" onclick="window.open('http://www.kpc.or.kr/PTWED003_dtil_view.do?ecno=47377&cclno=49050076&cono=151937', '_blank')"><td>ISO 9001/14001/45001 통합 내부심사원 양성</td><td class="title-cell">ISO 경영시스템<span class="injae-badge">인재키움</span></td><td>21시간</td><td>2026-06-17(수) ~ 2026-06-19(금)</td></tr>
+<tr class="course-row injae" onclick="window.open('http://www.kpc.or.kr/PTWED003_dtil_view.do?ecno=47946&cclno=49050049&cono=154774', '_blank')"><td>품질보증핵심실무</td><td class="title-cell">품질<span class="injae-badge">인재키움</span></td><td>14시간</td><td>2026-06-18(목) ~ 2026-06-19(금)</td></tr>
+<tr class="course-row injae" onclick="window.open('http://www.kpc.or.kr/PTWED003_dtil_view.do?ecno=47008&cclno=49050011&cono=156437', '_blank')"><td>근로감독 대응실무 체크포인트</td><td class="title-cell">인적자원·조직개발<span class="injae-badge">인재키움</span></td><td>7시간</td><td>2026-06-19(금) ~ 2026-06-19(금)</td></tr>
+<tr class="course-row injae" onclick="window.open('http://www.kpc.or.kr/PTWED003_dtil_view.do?ecno=47199&cclno=49050015&cono=156210', '_blank')"><td>조직을 이끄는 리더의 소통스킬(소통리더십)</td><td class="title-cell">계층·리더십<span class="injae-badge">인재키움</span></td><td>14시간</td><td>2026-06-22(월) ~ 2026-06-23(화)</td></tr>
+<tr class="course-row injae" onclick="window.open('http://www.kpc.or.kr/PTWED003_dtil_view.do?ecno=47594&cclno=49050066&cono=152112', '_blank')"><td>비즈니스 엑셀 활용[지역]</td><td class="title-cell">엑셀·PPT·문서<span class="injae-badge">인재키움</span></td><td>14시간</td><td>2026-06-22(월) ~ 2026-06-23(화)</td></tr>
+<tr class="course-row" onclick="window.open('http://www.kpc.or.kr/PTWED003_dtil_view.do?ecno=47491&cclno=49050120&cono=151209', '_blank')"><td>프레젠테이션스킬</td><td class="title-cell">비즈니스스킬</td><td>18시간</td><td>2026-06-22(월) ~ 2026-06-24(수)</td></tr>
+<tr class="course-row injae" onclick="window.open('http://www.kpc.or.kr/PTWED003_dtil_view.do?ecno=46985&cclno=49050010&cono=156432', '_blank')"><td>직무분석기본: HR의 첫걸음</td><td class="title-cell">인적자원·조직개발<span class="injae-badge">인재키움</span></td><td>18시간</td><td>2026-06-22(월) ~ 2026-06-24(수)</td></tr>
+<tr class="course-row injae" onclick="window.open('http://www.kpc.or.kr/PTWED003_dtil_view.do?ecno=47196&cclno=49050015&cono=156211', '_blank')"><td>주도적 업무수행을 위한 셀프리더십</td><td class="title-cell">계층·리더십<span class="injae-badge">인재키움</span></td><td>14시간</td><td>2026-06-24(수) ~ 2026-06-25(목)</td></tr>
+<tr class="course-row" onclick="window.open('http://www.kpc.or.kr/PTWED003_dtil_view.do?ecno=47948&cclno=49050049&cono=154833', '_blank')"><td>사전 품질 계획(APQP)실무</td><td class="title-cell">품질</td><td>20시간</td><td>2026-06-24(수) ~ 2026-06-26(금)</td></tr>
+<tr class="course-row injae" onclick="window.open('http://www.kpc.or.kr/PTWED003_dtil_view.do?ecno=47408&cclno=49050001&cono=153993', '_blank')"><td>생산KPI설정과 목표관리</td><td class="title-cell">생산<span class="injae-badge">인재키움</span></td><td>14시간</td><td>2026-06-25(목) ~ 2026-06-26(금)</td></tr>
+<tr class="course-row injae" onclick="window.open('http://www.kpc.or.kr/PTWED003_dtil_view.do?ecno=48177&cclno=49050171&cono=156161', '_blank')"><td>업무에 쉽게 적용하는 머신러닝·생성형 AI</td><td class="title-cell">생성형AI·디지털전환(DX)<span class="injae-badge">인재키움</span></td><td>16시간</td><td>2026-06-25(목) ~ 2026-06-26(금)</td></tr>
+<tr class="course-row injae" onclick="window.open('http://www.kpc.or.kr/PTWED003_dtil_view.do?ecno=47580&cclno=49050052&cono=156592', '_blank')"><td>ChatGPT와 Gemini를 활용한 구매관리 혁신</td><td class="title-cell">구매·자재<span class="injae-badge">인재키움</span></td><td>14시간</td><td>2026-06-29(월) ~ 2026-06-30(화)</td></tr>
+<tr class="course-row injae" onclick="window.open('http://www.kpc.or.kr/PTWED003_dtil_view.do?ecno=47708&cclno=49050043&cono=154139', '_blank')"><td>TPM기술력 향상을 위한 ChatGPT 활용</td><td class="title-cell">생산<span class="injae-badge">인재키움</span></td><td>14시간</td><td>2026-06-29(월) ~ 2026-06-30(화)</td></tr>
+<tr class="course-row injae" onclick="window.open('http://www.kpc.or.kr/PTWED003_dtil_view.do?ecno=47872&cclno=49050065&cono=152727', '_blank')"><td>PM(Project Manager) 양성</td><td class="title-cell">프로젝트관리(PM)<span class="injae-badge">인재키움</span></td><td>28시간</td><td>2026-06-29(월) ~ 2026-07-02(목)</td></tr>
+<tr class="course-row injae" onclick="window.open('http://www.kpc.or.kr/PTWED003_dtil_view.do?ecno=48297&cclno=49050271&cono=156163', '_blank')"><td>산업군 특화 AI 에이전트 구축(제조업)</td><td class="title-cell">생성형AI·디지털전환(DX)<span class="injae-badge">인재키움</span></td><td>14시간</td><td>2026-07-02(목) ~ 2026-07-03(금)</td></tr>
+<tr class="course-row injae" onclick="window.open('http://www.kpc.or.kr/PTWED003_dtil_view.do?ecno=47965&cclno=49050050&cono=154859', '_blank')"><td>ChatGPT 활용 통계적 데이터분석 기초</td><td class="title-cell">품질<span class="injae-badge">인재키움</span></td><td>14시간</td><td>2026-07-02(목) ~ 2026-07-03(금)</td></tr>
+<tr class="course-row injae" onclick="window.open('http://www.kpc.or.kr/PTWED003_dtil_view.do?ecno=47840&cclno=49050056&cono=154959', '_blank')"><td>ChatGPT활용 물류 운영 최적화</td><td class="title-cell">유통·물류·SCM·무역<span class="injae-badge">인재키움</span></td><td>14시간</td><td>2026-07-06(월) ~ 2026-07-07(화)</td></tr>
+<tr class="course-row injae" onclick="window.open('http://www.kpc.or.kr/PTWED003_dtil_view.do?ecno=47433&cclno=49050042&cono=154078', '_blank')"><td>스마트공장 MES 도입 및 운영실무</td><td class="title-cell">생산<span class="injae-badge">인재키움</span></td><td>14시간</td><td>2026-07-06(월) ~ 2026-07-07(화)</td></tr>
+<tr class="course-row injae" onclick="window.open('http://www.kpc.or.kr/PTWED003_dtil_view.do?ecno=47595&cclno=49050066&cono=156136', '_blank')"><td>VBA와 매크로를 활용한 문서 자동화 실무[지역]</td><td class="title-cell">엑셀·PPT·문서<span class="injae-badge">인재키움</span></td><td>21시간</td><td>2026-07-06(월) ~ 2026-07-08(수)</td></tr>
+<tr class="course-row injae" onclick="window.open('http://www.kpc.or.kr/PTWED003_dtil_view.do?ecno=47548&cclno=49050171&cono=156162', '_blank')"><td>[AI 특화] Python 라이브러리를 활용한 인공지능</td><td class="title-cell">생성형AI·디지털전환(DX)<span class="injae-badge">인재키움</span></td><td>35시간</td><td>2026-07-06(월) ~ 2026-07-10(금)</td></tr>
+<tr class="course-row" onclick="window.open('http://www.kpc.or.kr/PTWED003_dtil_view.do?ecno=47942&cclno=49050048&cono=154750', '_blank')"><td>통계적 공정관리(SPC) 실무</td><td class="title-cell">품질</td><td>20시간</td><td>2026-07-08(수) ~ 2026-07-10(금)</td></tr>
+<tr class="course-row injae" onclick="window.open('http://www.kpc.or.kr/PTWED003_dtil_view.do?ecno=47465&cclno=49050033&cono=155733', '_blank')"><td>실수는 줄이고 품격은 높이는, 언어습관 클리닉</td><td class="title-cell">CS<span class="injae-badge">인재키움</span></td><td>7시간</td><td>2026-07-09(목) ~ 2026-07-09(목)</td></tr>
+<tr class="course-row injae" onclick="window.open('http://www.kpc.or.kr/PTWED003_dtil_view.do?ecno=47541&cclno=49050226&cono=152867', '_blank')"><td>일잘러의 ChatGPT와 생성형 AI 업무 활용</td><td class="title-cell">생성형AI·디지털전환(DX)<span class="injae-badge">인재키움</span></td><td>6시간</td><td>2026-07-10(금) ~ 2026-07-10(금)</td></tr>
+<tr class="course-row injae" onclick="window.open('http://www.kpc.or.kr/PTWED003_dtil_view.do?ecno=48270&cclno=49050271&cono=156231', '_blank')"><td>2일만에 합격하는 MS-AI 900 자격증</td><td class="title-cell">생성형AI·디지털전환(DX)<span class="injae-badge">인재키움</span></td><td>14시간</td><td>2026-07-13(월) ~ 2026-07-14(화)</td></tr>
+<tr class="course-row injae" onclick="window.open('http://www.kpc.or.kr/PTWED003_dtil_view.do?ecno=48647&cclno=49050300&cono=156839', '_blank')"><td>[두산] AI를 활용한 업무 생산성 혁신 : 구글 앱시트</td><td class="title-cell">산업맞춤 역량 강화<span class="injae-badge">인재키움</span></td><td>14시간</td><td>2026-07-13(월) ~ 2026-07-14(화)</td></tr>
+<tr class="course-row injae" onclick="window.open('http://www.kpc.or.kr/PTWED003_dtil_view.do?ecno=47555&cclno=49050171&cono=156158', '_blank')"><td>[구글] 구글 앱시트: 칼퇴근의 마법!</td><td class="title-cell">생성형AI·디지털전환(DX)<span class="injae-badge">인재키움</span></td><td>14시간</td><td>2026-07-13(월) ~ 2026-07-14(화)</td></tr>
+<tr class="course-row injae" onclick="window.open('http://www.kpc.or.kr/PTWED003_dtil_view.do?ecno=47410&cclno=49050001&cono=153973', '_blank')"><td>현장리더직무능력향상</td><td class="title-cell">생산<span class="injae-badge">인재키움</span></td><td>14시간</td><td>2026-07-13(월) ~ 2026-07-14(화)</td></tr>
+<tr class="course-row injae" onclick="window.open('http://www.kpc.or.kr/PTWED003_dtil_view.do?ecno=47858&cclno=49050052&cono=154670', '_blank')"><td>구매 데이터분석 및 활용 (AI 활용)</td><td class="title-cell">구매·자재<span class="injae-badge">인재키움</span></td><td>18시간</td><td>2026-07-13(월) ~ 2026-07-15(수)</td></tr>
+<tr class="course-row injae" onclick="window.open('http://www.kpc.or.kr/PTWED003_dtil_view.do?ecno=47320&cclno=49050016&cono=156212', '_blank')"><td>사내 협업 및 네트워킹 전략</td><td class="title-cell">계층·리더십<span class="injae-badge">인재키움</span></td><td>14시간</td><td>2026-07-15(수) ~ 2026-07-16(목)</td></tr>
+<tr class="course-row injae" onclick="window.open('http://www.kpc.or.kr/PTWED003_dtil_view.do?ecno=47300&cclno=49050016&cono=156213', '_blank')"><td>센스있는 실무자의 보고스킬</td><td class="title-cell">계층·리더십<span class="injae-badge">인재키움</span></td><td>14시간</td><td>2026-07-20(월) ~ 2026-07-21(화)</td></tr>
+<tr class="course-row injae" onclick="window.open('http://www.kpc.or.kr/PTWED003_dtil_view.do?ecno=47704&cclno=49050043&cono=154105', '_blank')"><td>AI와 IoT기반 설비보전실무</td><td class="title-cell">생산<span class="injae-badge">인재키움</span></td><td>14시간</td><td>2026-07-20(월) ~ 2026-07-21(화)</td></tr>
+<tr class="course-row injae" onclick="window.open('http://www.kpc.or.kr/PTWED003_dtil_view.do?ecno=47520&cclno=49050123&cono=151472', '_blank')"><td>자기혁신과 조직활성화</td><td class="title-cell">비즈니스스킬<span class="injae-badge">인재키움</span></td><td>14시간</td><td>2026-07-21(화) ~ 2026-07-22(수)</td></tr>
+<tr class="course-row injae" onclick="window.open('http://www.kpc.or.kr/PTWED003_dtil_view.do?ecno=47392&cclno=49050054&cono=152208', '_blank')"><td>현장 중심 재고관리기법 활용 실무</td><td class="title-cell">구매·자재<span class="injae-badge">인재키움</span></td><td>18시간</td><td>2026-07-22(수) ~ 2026-07-24(금)</td></tr>
+<tr class="course-row injae" onclick="window.open('http://www.kpc.or.kr/PTWED003_dtil_view.do?ecno=48131&cclno=49050226&cono=156106', '_blank')"><td>현업에서 바로 통하는 올인원 AI 실무</td><td class="title-cell">생성형AI·디지털전환(DX)<span class="injae-badge">인재키움</span></td><td>7시간</td><td>2026-07-24(금) ~ 2026-07-24(금)</td></tr>
+<tr class="course-row" onclick="window.open('http://www.kpc.or.kr/PTWED003_dtil_view.do?ecno=47469&cclno=49050032&cono=155734', '_blank')"><td>공공기관 대국민 서비스 개선실무</td><td class="title-cell">CS</td><td>6시간</td><td>2026-07-27(월) ~ 2026-07-27(월)</td></tr>
+<tr class="course-row injae" onclick="window.open('http://www.kpc.or.kr/PTWED003_dtil_view.do?ecno=47580&cclno=49050052&cono=156593', '_blank')"><td>ChatGPT와 Gemini를 활용한 구매관리 혁신</td><td class="title-cell">구매·자재<span class="injae-badge">인재키움</span></td><td>14시간</td><td>2026-07-27(월) ~ 2026-07-28(화)</td></tr>
+<tr class="course-row" onclick="window.open('http://www.kpc.or.kr/PTWED003_dtil_view.do?ecno=47489&cclno=49050120&cono=151268', '_blank')"><td>비즈니스문서작성실무</td><td class="title-cell">비즈니스스킬</td><td>18시간</td><td>2026-08-03(월) ~ 2026-08-05(수)</td></tr>
+<tr class="course-row injae" onclick="window.open('http://www.kpc.or.kr/PTWED003_dtil_view.do?ecno=48516&cclno=49050024&cono=156405', '_blank')"><td>ERP Process 기반 실제원가계산 실무 (지역)</td><td class="title-cell">원가<span class="injae-badge">인재키움</span></td><td>18시간</td><td>2026-08-10(월) ~ 2026-08-12(수)</td></tr>
+<tr class="course-row injae" onclick="window.open('http://www.kpc.or.kr/PTWED003_dtil_view.do?ecno=47191&cclno=49050153&cono=156215', '_blank')"><td>신임 차장 과정</td><td class="title-cell">계층·리더십<span class="injae-badge">인재키움</span></td><td>18시간</td><td>2026-08-12(수) ~ 2026-08-14(금)</td></tr>
+<tr class="course-row injae" onclick="window.open('http://www.kpc.or.kr/PTWED003_dtil_view.do?ecno=47090&cclno=49050019&cono=156422', '_blank')"><td>비재경부서 임직원을 위한 재무제표의 이해와 재무분석기초</td><td class="title-cell">재무<span class="injae-badge">인재키움</span></td><td>18시간</td><td>2026-08-12(수) ~ 2026-08-14(금)</td></tr>
+<tr class="course-row injae" onclick="window.open('http://www.kpc.or.kr/PTWED003_dtil_view.do?ecno=48497&cclno=49050134&cono=156385', '_blank')"><td>성과 관리를 위한 KPI 도출과 활용 실무(지역)</td><td class="title-cell">경영기획<span class="injae-badge">인재키움</span></td><td>18시간</td><td>2026-08-12(수) ~ 2026-08-14(금)</td></tr>
+<tr class="course-row injae" onclick="window.open('http://www.kpc.or.kr/PTWED003_dtil_view.do?ecno=47853&cclno=49050052&cono=154611', '_blank')"><td>구매원가기본</td><td class="title-cell">구매·자재<span class="injae-badge">인재키움</span></td><td>14시간</td><td>2026-08-13(목) ~ 2026-08-14(금)</td></tr>
+<tr class="course-row injae" onclick="window.open('http://www.kpc.or.kr/PTWED003_dtil_view.do?ecno=47956&cclno=49050049&cono=154796', '_blank')"><td>ChatGPT를 활용한 현장표준화 추진 실무</td><td class="title-cell">품질<span class="injae-badge">인재키움</span></td><td>14시간</td><td>2026-08-18(화) ~ 2026-08-19(수)</td></tr>
+<tr class="course-row injae" onclick="window.open('http://www.kpc.or.kr/PTWED003_dtil_view.do?ecno=47887&cclno=49050065&cono=156263', '_blank')"><td>슬기로운 PM 생활 (프로젝트를 성공으로 이끄는 지혜)</td><td class="title-cell">프로젝트관리(PM)<span class="injae-badge">인재키움</span></td><td>14시간</td><td>2026-08-19(수) ~ 2026-08-20(목)</td></tr>
+<tr class="course-row" onclick="window.open('http://www.kpc.or.kr/PTWED003_dtil_view.do?ecno=47509&cclno=49050122&cono=151394', '_blank')"><td>기획력개발</td><td class="title-cell">비즈니스스킬</td><td>18시간</td><td>2026-08-19(수) ~ 2026-08-21(금)</td></tr>
+<tr class="course-row injae" onclick="window.open('http://www.kpc.or.kr/PTWED003_dtil_view.do?ecno=47416&cclno=49050001&cono=154030', '_blank')"><td>공정시스템개선 및 공정관리합리화</td><td class="title-cell">생산<span class="injae-badge">인재키움</span></td><td>14시간</td><td>2026-08-20(목) ~ 2026-08-21(금)</td></tr>
+<tr class="course-row injae" onclick="window.open('http://www.kpc.or.kr/PTWED003_dtil_view.do?ecno=48131&cclno=49050226&cono=156107', '_blank')"><td>현업에서 바로 통하는 올인원 AI 실무</td><td class="title-cell">생성형AI·디지털전환(DX)<span class="injae-badge">인재키움</span></td><td>7시간</td><td>2026-08-21(금) ~ 2026-08-21(금)</td></tr>
+<tr class="course-row injae" onclick="window.open('http://www.kpc.or.kr/PTWED003_dtil_view.do?ecno=47402&cclno=49050042&cono=154081', '_blank')"><td>스마트공장 생산시스템 구축실무</td><td class="title-cell">생산<span class="injae-badge">인재키움</span></td><td>14시간</td><td>2026-08-24(월) ~ 2026-08-25(화)</td></tr>
+<tr class="course-row injae" onclick="window.open('http://www.kpc.or.kr/PTWED003_dtil_view.do?ecno=47549&cclno=49050171&cono=156160', '_blank')"><td>[AI 특화] 기획자를 위한 머신러닝·딥러닝 이해</td><td class="title-cell">생성형AI·디지털전환(DX)<span class="injae-badge">인재키움</span></td><td>14시간</td><td>2026-08-24(월) ~ 2026-08-25(화)</td></tr>
+<tr class="course-row injae" onclick="window.open('http://www.kpc.or.kr/PTWED003_dtil_view.do?ecno=46690&cclno=49050007&cono=147970', '_blank')"><td>신규사업 아이디어 개발과 기획실무 (지역)</td><td class="title-cell">경영기획<span class="injae-badge">인재키움</span></td><td>18시간</td><td>2026-08-24(월) ~ 2026-08-26(수)</td></tr>
+<tr class="course-row injae" onclick="window.open('http://www.kpc.or.kr/PTWED003_dtil_view.do?ecno=47174&cclno=49050014&cono=156217', '_blank')"><td>초급관리자 역량강화</td><td class="title-cell">계층·리더십<span class="injae-badge">인재키움</span></td><td>18시간</td><td>2026-08-24(월) ~ 2026-08-26(수)</td></tr>
+<tr class="course-row injae" onclick="window.open('http://www.kpc.or.kr/PTWED003_dtil_view.do?ecno=47456&cclno=49050033&cono=155708', '_blank')"><td>내외부 고객을 위한 비즈니스매너</td><td class="title-cell">CS<span class="injae-badge">인재키움</span></td><td>7시간</td><td>2026-08-26(수) ~ 2026-08-26(수)</td></tr>
+<tr class="course-row injae" onclick="window.open('http://www.kpc.or.kr/PTWED003_dtil_view.do?ecno=47541&cclno=49050226&cono=156104', '_blank')"><td>일잘러의 ChatGPT와 생성형 AI 업무 활용</td><td class="title-cell">생성형AI·디지털전환(DX)<span class="injae-badge">인재키움</span></td><td>6시간</td><td>2026-08-27(목) ~ 2026-08-27(목)</td></tr>
+<tr class="course-row injae" onclick="window.open('http://www.kpc.or.kr/PTWED003_dtil_view.do?ecno=47952&cclno=49050049&cono=154811', '_blank')"><td>IATF 16949 Core Tools</td><td class="title-cell">품질<span class="injae-badge">인재키움</span></td><td>14시간</td><td>2026-08-27(목) ~ 2026-08-28(금)</td></tr>
+<tr class="course-row injae" onclick="window.open('http://www.kpc.or.kr/PTWED003_dtil_view.do?ecno=47438&cclno=49050042&cono=154070', '_blank')"><td>Open AI를 활용한 스마트팩토리 문제해결</td><td class="title-cell">생산<span class="injae-badge">인재키움</span></td><td>14시간</td><td>2026-08-27(목) ~ 2026-08-28(금)</td></tr>
+
+                </tbody>
+            </table>
+            
+        </div>
+    </div>
+
+</body>
+</html>
